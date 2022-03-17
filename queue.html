@@ -41,15 +41,13 @@
 </body>
 <script>
 	function makeNewDiv(){
-		/* make the div and its text */
+		
         let element = document.createElement("div")
         element.innerHTML = document.getElementById("form_text").value;
         element.setAttribute('class', 'queue');
-
-		/* add it to the container */
+		
         let container = document.getElementById('target')
         container.insertBefore(element, container.firstChild);
-
 	}
     function fetchItem() {
         queueItems = document.getElementsByClassName('queue');
@@ -60,7 +58,6 @@
             }
         }
     }
-
     function zap() {
         var queueItems = document.getElementsByClassName("queue")
         var length = queueItems.length;
